@@ -1,0 +1,270 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+<body class="calculadoras-template-default single single-calculadoras postid-1131189 single-format-standard"
+    style="transform: none;" bgcolor="orange"><center>
+
+        <img src="aluguel.jpg"
+
+        alt="simulador-de-financiamento-de-veiculos"
+     
+     title="Simulador De financiamento">
+
+      <img src="https://chiptronic.com.br/blog/wp-content/uploads/2017/11/Confira-as-5-motos-mais-potentes-do-mundo-atualmente-768x509.jpg "
+
+        alt="simulador-de-financiamento-de-veiculos"
+      width="600"
+     height="400"
+     title="Simulador De financiamento">
+
+
+
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP2SGPR" height="0"
+            width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="app-container" style="height: auto !important; transform: none;">
+
+        <h1 class="content-hero__title"> <span>Simulador de financiamento de veículos</span>
+        </h1>
+        </header>
+        <div class="calculadora__block" style="height: auto !important;">
+            <section class="container__input__calculadora " style="height: auto !important;">
+                <form class="container__input__calculadora">
+                    <div class="row__titulo__calculadora">
+                        <h2>Cálculo de financiamento de veículo</h2>
+                    </div>
+                    <div class="row__input__calculadora">
+                        <div class="input__calculadora">
+                            <div class="titulo__input"> <span>Valor do veículo</span>
+                                <div class="tooltip">
+                                    <figure> </figure> <span class="tooltiptext">O preço do carro,
+                                        moto ou outro automóvel que queira financiar.</span>
+                                </div>
+                            </div>
+                            <div class="input__valor"> <label class="cifrao" for="valor__veiculo">R$</label><input
+                                    inputmode="numeric" type="text" name="valor__veiculo" id="valor__veiculo"
+                                    class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+                            </div>
+                        </div>
+                        <div class="input__calculadora">
+                            <div class="titulo__input"> <span>Valor de entrada</span>
+                                <div class="tooltip">
+                                    <br>
+                                    <span class="tooltiptext">Caso o
+                                        financiamento tenha entrada ou aceite seu veículo na troca,
+                                        adicionar o valor aqui.</span>
+                                </div>
+                            </div>
+                            <div class="input__valor"> <label class="cifrao" for="valor__entrada">R$</label><input
+                                    inputmode="numeric" type="text" name="valor__entrada" id="valor__entrada"
+                                    class="input__com__cifrao" placeholder="0,00" value="0,00" onkeyup="formatar(this)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row__input__calculadora">
+                        <div class="input__calculadora">
+                            <div class="titulo__input"> <label for="valor__taxa__juros">Taxa de
+                                    juros</label>
+                                <div class="tooltip">
+                                    <figure>
+                                        <g fill="none" fill-rule="evenodd">
+                                            <circle stroke="#363A43" stroke-width="1.1" cx="7.5" cy="7.5" r="6.95">
+                                            </circle>
+                                            <path
+                                                d="M7.73 5.077c.44 0 .808-.368.808-.808a.816.816 0 00-.807-.807.816.816 0 00-.808.807c0 .44.368.808.808.808zm.808 5.769v-5.16l-1.615.516v4.644z"
+                                                fill="#363A43"></path>
+                                        </g>
+                                        </svg>
+                                    </figure> <span class="tooltiptext">A taxa que
+                                        incidirá sobre o valor financiado. Utilize o CET,
+                                        preferencialmente.</span>
+                                </div>
+                            </div>
+                            <div class="input__valor"> <input inputmode="numeric" type="text" name="valor__taxa__juros"
+                                    value="0,00" id="valor__taxa__juros" class="input__sem_cifrao" placeholder="0"
+                                    onkeyup="formatar(this)">
+                                <div class="selecionar__periodo"> <select name="selecionar__opcoes"
+                                        aria-label="taxa__juro__periodo" id="taxa__juro__periodo"
+                                        class="selecionar__opcoes">
+                                        <option value="mensal">% mensal</option>
+                                        <option value="anual">% anual</option>
+                                    </select> </div>
+                            </div>
+                            <div class="input__calculadora">
+                                <div class="titulo__input"> <label for="valor__periodo">Tempo do
+                                        Financiamento</label>
+                                    <div class="tooltip">
+                                        <figure> <svg width="15" height="15" viewBox="0 0 15 15"></svg>
+
+
+                                        </figure> <span class="tooltiptext">O período de
+                                            duração, em meses ou anos, do contrato de
+                                            financiamento.</span>
+                                    </div>
+                                </div>
+                                <div class="input__valor"> <input type="number" id="valor__periodo"
+                                        class="input__sem_cifrao" placeholder="0">
+                                    <div class="selecionar__periodo"> <select name="selecionar__opcoes"
+                                            aria-label="periodo__em" id="periodo__em" class="selecionar__opcoes">
+                                            <option value="meses">Meses</option>
+                                            <option value="anos">Anos</option>
+                                        </select> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row__input__calculadora">
+                            <div class="buttons__calculadora"> <button type="reset" class="button__limpar"
+                                    onclick="fecharResultado()">Limpar</button>
+                                <button type="button" class="button__calcular"
+                                    onclick="financiamentoVeiculo()">Calcular</button>
+                            </div>
+                        </div>
+                </form>
+                <div class="container__result__calculadora">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="titulo__resultado" style="display: inline-table;">Resultado
+                            </h2>
+                            <table class="resultado" style="display: inline-table;">
+                                <tbody>
+                                    <tr>
+                                        <th><span>Evento</span></th>
+                                        <th><span>Valores</span></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Total pago no financiamento</td>
+                                        <td id="total">R$&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valor financiado</td>
+                                        <td id="valor__financiado">R$&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Juros devidos </td>
+                                        <td id="juros__acumulados">R$&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pagamento mensal estimado</td>
+                                        <td id="pagamento__mensal">R$&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script
+                    id="superpwa-register-sw-js-extra">var superpwa_sw = { "url": "\/superpwa-sw.js", "disable_addtohome": "0", "enableOnDesktop": "" };</script>
+
+
+
+                <script defer="" src="Calculadora.js" id="calculator-js-js"></script>
+
+                </noscript>
+                <script>window.lazyLoadOptions = { elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids(); } } } } } }; window.addEventListener('LazyLoad::Initialized', function (e) { var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) { var observer = new MutationObserver(function (mutations) { var image_count = 0; var iframe_count = 0; var rocketlazy_count = 0; mutations.forEach(function (mutation) { for (i = 0; i < mutation.addedNodes.length; i++) { if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') { return; } if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') { return; } images = mutation.addedNodes[i].getElementsByTagName('img'); is_image = mutation.addedNodes[i].tagName == "IMG"; iframes = mutation.addedNodes[i].getElementsByTagName('iframe'); is_iframe = mutation.addedNodes[i].tagName == "IFRAME"; rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload'); image_count += images.length; iframe_count += iframes.length; rocketlazy_count += rocket_lazy.length; if (is_image) { image_count += 1; } if (is_iframe) { iframe_count += 1; } } }); if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) { lazyLoadInstance.update(); } }); var b = document.getElementsByTagName("body")[0]; var config = { childList: true, subtree: true }; observer.observe(b, config); } }, false);</script>
+        </div>
+
+        <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"
+            data-ad-status="unfilled"><ins id="aswift_0_expand" tabindex="0" title="Advertisement"
+                aria-label="Advertisement"
+                style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;"><ins
+                    id="aswift_0_anchor"
+                    style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe
+                        id="aswift_0" name="aswift_0"
+                        style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;"
+                        sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                        frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true"
+                        scrolling="no" allowfullscreen="true" allow="attribution-reporting"
+                        src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-1602723282047782&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1642776816&amp;plat=3%3A32%2C4%3A32%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fwww.idinheiro.com.br%2Fcalculadoras%2Fsimulador-de-financiamento-de-veiculos%2F&amp;ea=0&amp;flash=0&amp;pra=5&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTUuMC4wIiwieDg2IiwiIiwiOTYuMC40NjY0LjExMCIsW10sbnVsbCxudWxsLCI2NCJd&amp;dt=1643069697613&amp;bpp=3&amp;bdt=597&amp;idt=290&amp;shv=r20220119&amp;mjsv=m202201120101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;nras=1&amp;correlator=1052052515547&amp;frm=20&amp;pv=2&amp;ga_vid=1779513157.1643069698&amp;ga_sid=1643069698&amp;ga_hid=526410941&amp;ga_fc=1&amp;u_tz=-180&amp;u_his=4&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1032&amp;u_aw=1920&amp;u_cd=24&amp;u_sd=1&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1864&amp;bih=931&amp;scr_x=0&amp;scr_y=0&amp;eid=44750773%2C44753738%2C31064036%2C31064125&amp;oid=2&amp;pvsid=1718561818269442&amp;pem=491&amp;tmod=1297738069&amp;nvt=1&amp;ref=https%3A%2F%2Fwww.google.com.br%2F&amp;eae=2&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1920%2C0%2C1920%2C1032%2C1879%2C931&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=308"
+                        data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins>
+        <script type="text/javascript" id="" src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+        <script type="text/javascript"
+            id="">OneSignal = window.OneSignal || []; OneSignal.push(function () { OneSignal.init({ appId: "5e782973-f0b8-45a6-aac2-878f9ea08965", notifyButton: { enable: !0 } }) }); window.dataLayer = window.dataLayer || []; OneSignal.push(function () { OneSignal.on("notificationPermissionChange", function (a) { a = a.to; console.log("New permission state:", a); window.dataLayer.push({ event: "permissionChangeEvent", currentPermission: a }) }) });</script>
+        <div id="onesignal-bell-container"
+            class="onesignal-bell-container onesignal-reset onesignal-bell-container-bottom-right">
+            <div id="onesignal-bell-launcher"
+                class="onesignal-bell-launcher onesignal-bell-launcher-md onesignal-bell-launcher-bottom-right onesignal-bell-launcher-theme-default onesignal-bell-launcher-active"
+                style="bottom: 15px; right: 15px;">
+
+                <div class="onesignal-bell-launcher-badge"
+                    style="filter: drop-shadow(0 2px 4px rgba(34,36,38,0));; -webkit-filter: drop-shadow(0 2px 4px rgba(34,36,38,0));;">
+                </div>
+                <div class="onesignal-bell-launcher-message">
+                    <div class="onesignal-bell-launcher-message-body"></div>
+                </div>
+                <div class="onesignal-bell-launcher-dialog"
+                    style="filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));; -webkit-filter: drop-shadow(0px 2px 2px rgba(34,36,38,.15));;">
+                    <div class="onesignal-bell-launcher-dialog-body"></div>
+                </div>
+            </div>
+        </div>
+        <section id="contato" class="sc-TtZHJ obIeh">
+            <div class="sc-iklIKw hyPRvI">
+                <div class="sc-bdnylx jWbkpe">
+                    <div class="sc-gtssRu leHnuO">
+                        <div class="sc-dlnjPT hBEVPM">
+                            <p class="sc-jJMGHv crVslF">Nossa Loja</p>
+                            <p class="sc-hiKfjK eTyHFg">Endereço</p>
+                           <!-- <p class="sc-gXfWUo EIIkt">Avenida Transbrasiliana, 248 - Parque Amazônia <br>Goiânia - GO,
+                                74835-300 Brasil</p>-->
+                            <p class="sc-hiKfjK eTyHFg">Telefone</p>
+                            <p class="sc-cBoprd gChalR">
+                                <li class="sc-ciSmjq eGqnrC">(62) 3645-6904</li>
+                                <li class="sc-jcwofb jtftyQ"><a
+                                        href="https://api.whatsapp.com/send?phone=5562998130162&amp;text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20um%20ve%C3%ADculo%20anunciado%20em%20seu%20site.%20Aguardo%20seu%20contato%2C%20obrigado."
+                                        target="_blank" class="sc-carGAA byYjZo">(62) 99813-0162</a></li>
+                            </p>
+                        </div>
+                        <div class="sc-dlnjPT jFDcul">
+                            <form class="sc-kfYqjs jpcbJh">
+                                <p class="sc-fKgIGh efpGaJ">Entre em contato <br> com nossa equipe</p>
+                                <p><label for="name" class="sc-bCwgka fwnSOM">Nome</label><input id="name" name="name"
+                                        type="text" placeholder="Nome" class="sc-iwaifL ckTZku"></p>
+                                <p><label for="email" class="sc-bCwgka fwnSOM">Email</label><input id="email"
+                                        name="email" type="text" placeholder="Email" class="sc-iwaifL ckTZku"></p>
+                                <p><label for="phone" class="sc-bCwgka fwnSOM">Telefone</label><input id="phone"
+                                        name="phone" type="text" placeholder="Telefone" class="sc-iwaifL ckTZku"></p>
+                                <p><label for="message" class="sc-bCwgka fwnSOM">Mensagem</label><textarea id="message"
+                                        name="message" rows="5" placeholder="Mensagem"
+                                        class="sc-cxNIbT DatBo"></textarea></p>
+                                <p><small class="sc-iJCRLp hLvDVx">Este site é protegido pelo reCAPTCHA e pelo Google,
+                                        <a
+                                            href="https://www.google.com/intl/pt-BR/policies/privacy/"><b>Privacidade</b></a>
+                                        e
+                                        <a href="https://www.google.com/intl/pt-BR/policies/terms/"><b>Termos</b></a> se
+                                        aplicam.</small></p>
+                                <div class="sc-ezzayL dvEEhY"><button type="submit"
+                                        class="sc-lmgQde begVtZ">Enviar</button>
+                                </div>
+                                <div class="sc-bkbjAj ejiMGH">
+                                   
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>!function (e) { function t(t) { for (var n, l, a = t[0], i = t[1], f = t[2], p = 0, s = []; p < a.length; p++)l = a[p], Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), o[l] = 0; for (n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n]); for (c && c(t); s.length;)s.shift()(); return u.push.apply(u, f || []), r() } function r() { for (var e, t = 0; t < u.length; t++) { for (var r = u[t], n = !0, a = 1; a < r.length; a++) { var i = r[a]; 0 !== o[i] && (n = !1) } n && (u.splice(t--, 1), e = l(l.s = r[0])) } return e } var n = {}, o = { 1: 0 }, u = []; function l(t) { if (n[t]) return n[t].exports; var r = n[t] = { i: t, l: !1, exports: {} }; return e[t].call(r.exports, r, r.exports, l), r.l = !0, r.exports } l.m = e, l.c = n, l.d = function (e, t, r) { l.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r }) }, l.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, l.t = function (e, t) { if (1 & t && (e = l(e)), 8 & t) return e; if (4 & t && "object" == typeof e && e && e.__esModule) return e; var r = Object.create(null); if (l.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e) for (var n in e) l.d(r, n, function (t) { return e[t] }.bind(null, n)); return r }, l.n = function (e) { var t = e && e.__esModule ? function () { return e.default } : function () { return e }; return l.d(t, "a", t), t }, l.o = function (e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, l.p = "/"; var a = this["webpackJsonpbasic-layout"] = this["webpackJsonpbasic-layout"] || [], i = a.push.bind(a); a.push = t, a = a.slice(); for (var f = 0; f < a.length; f++)t(a[f]); var c = i; r() }([])</script>
+    <div>
+        <div class="grecaptcha-badge" data-style="bottomright"
+            style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+            <div class="grecaptcha-logo"><iframe title="reCAPTCHA"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld9WrwZAAAAAHPRKwCpcFMKwrslQlj9o2liQcmq&amp;co=aHR0cHM6Ly93d3cuY2FybG9zc2VuYXZlaWN1bG9zLmNvbS5icjo0NDM.&amp;hl=pt-BR&amp;v=TDBxTlSsKAUm3tSIa0fwIqNu&amp;size=invisible&amp;cb=6xaoghyx2cyt"
+                    width="256" height="60" role="presentation" name="a-gy0l0trmu65e" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+            </div>
+            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+                class="g-recaptcha-response"
+                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+        </div><iframe style="display: none;"></iframe>
+    </div>
+</body>
+
+</html>
