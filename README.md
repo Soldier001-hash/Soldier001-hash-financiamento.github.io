@@ -1,1 +1,1 @@
-Criada uma calculadora para financiamento de imovel
+Criada uma calculadora para financiamento de veiculos
